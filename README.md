@@ -35,7 +35,19 @@ Most "AI invoice parsers" stop at *the LLM returned some JSON*. In finance that 
 
 Evaluated on **64 labelled invoices** (12 suppliers, 9 countries, 4 layouts, English and Greek, 3 scans) with **16 deliberately planted problems**:
 
-<!-- EVAL_RESULTS -->
+| Metric | `gpt-5.4-mini` |
+|---|---|
+| Field accuracy (12 header fields × 64 docs) | **100%** |
+| Line-item F1 | **100%** |
+| Planted problems caught | **16 / 16**: arithmetic 3/3 · invalid VAT/AFM 2/2 · invalid IBAN 2/2 · **changed IBAN (fraud) 1/1** · duplicates 3/3 · near-duplicate 1/1 · outlier 1/1 · scans 3/3 |
+| False alarms on clean invoices | **0 / 48** |
+| Straight-through processing | **75%**: all 48 clean invoices auto-approved; the 16 problem documents went to review or were blocked |
+| **Unsafe approvals** | **0** |
+| Cost / speed | **$0.0025 per invoice** ($0.16 for all 64) · median 2.1 s per document |
+
+The first run reached 67% straight-through. All 5 clean invoices sent to review were US invoices, where the model reported low confidence for an IBAN that simply isn't printed. The fix was a policy change, not a prompt hack: optional fields that are absent no longer count toward document confidence. Present-but-uncertain values still block approval. The per-document report in `eval_results/` lists the low-confidence fields, which is how this was found.
+
+> The sample set is synthetic and was built alongside the system, so these numbers are a strong baseline rather than a guarantee for real-world invoices. Run `python -m invoiceai.synth.generate --seed 7` to get a fresh, unseen set. LLM output varies slightly between runs: the live run in the screenshot above auto-approved 73% (one clean invoice was conservatively sent to review), still with zero unsafe approvals.
 
 The metric that matters most is **unsafe approvals**: documents auto-approved while wrong or problematic. The design goal is zero, so that everything uncertain goes to a human.
 
