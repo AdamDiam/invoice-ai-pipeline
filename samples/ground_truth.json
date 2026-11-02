@@ -1,0 +1,2920 @@
+{
+  "001_hispania_20260110.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "HP-2026-0472",
+      "issue_date": "2026-01-10",
+      "due_date": "2026-01-25",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Hispania Print S.L.",
+        "vat_id": "ESB14265799",
+        "country": "ES",
+        "address": "Calle de Alcalá 95, 28009 Madrid, Spain"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Roll-up banner",
+          "quantity": 5.0,
+          "unit_price": 77.91,
+          "vat_rate": 0.0,
+          "net_amount": 389.55
+        },
+        {
+          "description": "Business cards (500 units)",
+          "quantity": 1.0,
+          "unit_price": 56.9,
+          "vat_rate": 0.0,
+          "net_amount": 56.9
+        },
+        {
+          "description": "Brochure printing A5 (1,000 units)",
+          "quantity": 5.0,
+          "unit_price": 402.39,
+          "vat_rate": 0.0,
+          "net_amount": 2011.95
+        }
+      ],
+      "subtotal": 2458.4,
+      "vat_amount": 0.0,
+      "total": 2458.4,
+      "iban": "ES4258030267716687199089"
+    },
+    "expected_issues": [],
+    "supplier_key": "hispania"
+  },
+  "002_marconi_20260115.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "744/2026",
+      "issue_date": "2026-01-15",
+      "due_date": "2026-03-01",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Studio Marconi S.r.l.",
+        "vat_id": "IT68370720873",
+        "country": "IT",
+        "address": "Via Tortona 31, 20144 Milano, Italy"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Brand identity design",
+          "quantity": 1.0,
+          "unit_price": 2279.97,
+          "vat_rate": 0.0,
+          "net_amount": 2279.97
+        },
+        {
+          "description": "Website UI mockups",
+          "quantity": 1.0,
+          "unit_price": 1697.02,
+          "vat_rate": 0.0,
+          "net_amount": 1697.02
+        }
+      ],
+      "subtotal": 3976.99,
+      "vat_amount": 0.0,
+      "total": 3976.99,
+      "iban": "IT64X4580379209157623575533"
+    },
+    "expected_issues": [],
+    "supplier_key": "marconi"
+  },
+  "003_vandijk_20260115.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "VDL202600512",
+      "issue_date": "2026-01-15",
+      "due_date": "2026-02-14",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Van Dijk Logistics B.V.",
+        "vat_id": "NL339670711B01",
+        "country": "NL",
+        "address": "Waalhaven Zuidzijde 21, 3089 JH Rotterdam, Netherlands"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Pallet transport Rotterdam-Athens",
+          "quantity": 8.0,
+          "unit_price": 1338.63,
+          "vat_rate": 0.0,
+          "net_amount": 10709.04
+        }
+      ],
+      "subtotal": 10709.04,
+      "vat_amount": 0.0,
+      "total": 10709.04,
+      "iban": "NL57ABNA4460967357"
+    },
+    "expected_issues": [],
+    "supplier_key": "vandijk"
+  },
+  "004_vandijk_20260118.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "VDL202600507",
+      "issue_date": "2026-01-18",
+      "due_date": "2026-02-17",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Van Dijk Logistics B.V.",
+        "vat_id": "NL339670711B01",
+        "country": "NL",
+        "address": "Waalhaven Zuidzijde 21, 3089 JH Rotterdam, Netherlands"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Pallet transport Rotterdam-Athens",
+          "quantity": 1.0,
+          "unit_price": 1134.33,
+          "vat_rate": 0.0,
+          "net_amount": 1134.33
+        },
+        {
+          "description": "Warehouse storage (pallet/month)",
+          "quantity": 4.0,
+          "unit_price": 14.61,
+          "vat_rate": 0.0,
+          "net_amount": 58.44
+        },
+        {
+          "description": "Customs clearance fee",
+          "quantity": 1.0,
+          "unit_price": 105.12,
+          "vat_rate": 0.0,
+          "net_amount": 105.12
+        }
+      ],
+      "subtotal": 1297.89,
+      "vat_amount": 0.0,
+      "total": 1297.89,
+      "iban": "NL57ABNA4460967357"
+    },
+    "expected_issues": [],
+    "supplier_key": "vandijk"
+  },
+  "005_aegean_20260121.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0578",
+      "issue_date": "2026-01-21",
+      "due_date": "2026-03-07",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Espresso coffee beans 1kg",
+          "quantity": 4.0,
+          "unit_price": 23.49,
+          "vat_rate": 24.0,
+          "net_amount": 93.96
+        },
+        {
+          "description": "Seasonal fruit (crate)",
+          "quantity": 11.0,
+          "unit_price": 15.71,
+          "vat_rate": 13.0,
+          "net_amount": 172.81
+        },
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 3.0,
+          "unit_price": 6.36,
+          "vat_rate": 13.0,
+          "net_amount": 19.08
+        },
+        {
+          "description": "Extra virgin olive oil 5L",
+          "quantity": 9.0,
+          "unit_price": 43.95,
+          "vat_rate": 13.0,
+          "net_amount": 395.55
+        }
+      ],
+      "subtotal": 681.4,
+      "vat_amount": 98.92,
+      "total": 780.32,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [],
+    "supplier_key": "aegean"
+  },
+  "006_vandijk_20260209.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "VDL202600488",
+      "issue_date": "2026-02-09",
+      "due_date": "2026-03-11",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Van Dijk Logistics B.V.",
+        "vat_id": "NL339670711B01",
+        "country": "NL",
+        "address": "Waalhaven Zuidzijde 21, 3089 JH Rotterdam, Netherlands"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Warehouse storage (pallet/month)",
+          "quantity": 4.0,
+          "unit_price": 12.81,
+          "vat_rate": 0.0,
+          "net_amount": 51.24
+        },
+        {
+          "description": "Pallet transport Rotterdam-Athens",
+          "quantity": 5.0,
+          "unit_price": 1326.76,
+          "vat_rate": 0.0,
+          "net_amount": 6633.8
+        }
+      ],
+      "subtotal": 6685.04,
+      "vat_amount": 0.0,
+      "total": 6685.04,
+      "iban": "NL57ABNA4460967357"
+    },
+    "expected_issues": [],
+    "supplier_key": "vandijk"
+  },
+  "007_delta_20260209.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ 660",
+      "issue_date": "2026-02-09",
+      "due_date": "2026-03-11",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Δέλτα Λογιστική Ι.Κ.Ε.",
+        "vat_id": "EL469138108",
+        "country": "GR",
+        "address": "Αγίου Κωνσταντίνου 8, 151 24 Μαρούσι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Υποβολή περιοδικής δήλωσης ΦΠΑ",
+          "quantity": 1.0,
+          "unit_price": 100.01,
+          "vat_rate": 24.0,
+          "net_amount": 100.01
+        },
+        {
+          "description": "Λογιστική υποστήριξη μηνός",
+          "quantity": 1.0,
+          "unit_price": 559.16,
+          "vat_rate": 24.0,
+          "net_amount": 559.16
+        },
+        {
+          "description": "Σύνταξη μισθοδοσίας",
+          "quantity": 1.0,
+          "unit_price": 95.35,
+          "vat_rate": 24.0,
+          "net_amount": 95.35
+        }
+      ],
+      "subtotal": 754.52,
+      "vat_amount": 181.08,
+      "total": 935.6,
+      "iban": "GR24067055578829960785319307"
+    },
+    "expected_issues": [],
+    "supplier_key": "delta"
+  },
+  "008_aegean_20260301.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0602",
+      "issue_date": "2026-03-01",
+      "due_date": "2026-03-31",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 4.0,
+          "unit_price": 6.54,
+          "vat_rate": 13.0,
+          "net_amount": 26.16
+        }
+      ],
+      "subtotal": 26.16,
+      "vat_amount": 3.4,
+      "total": 29.56,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [],
+    "supplier_key": "aegean"
+  },
+  "009_hispania_20260305.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "HP-2026-0482",
+      "issue_date": "2026-03-05",
+      "due_date": "2026-04-04",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Hispania Print S.L.",
+        "vat_id": "ESB14265799",
+        "country": "ES",
+        "address": "Calle de Alcalá 95, 28009 Madrid, Spain"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Business cards (500 units)",
+          "quantity": 12.0,
+          "unit_price": 35.04,
+          "vat_rate": 0.0,
+          "net_amount": 420.48
+        },
+        {
+          "description": "Brochure printing A5 (1,000 units)",
+          "quantity": 9.0,
+          "unit_price": 393.89,
+          "vat_rate": 0.0,
+          "net_amount": 3545.01
+        }
+      ],
+      "subtotal": 3965.49,
+      "vat_amount": 0.0,
+      "total": 3965.49,
+      "iban": "ES4258030267716687199089"
+    },
+    "expected_issues": [],
+    "supplier_key": "hispania"
+  },
+  "010_vandijk_20260308.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "VDL202600505",
+      "issue_date": "2026-03-08",
+      "due_date": "2026-04-07",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Van Dijk Logistics B.V.",
+        "vat_id": "NL339670711B01",
+        "country": "NL",
+        "address": "Waalhaven Zuidzijde 21, 3089 JH Rotterdam, Netherlands"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Warehouse storage (pallet/month)",
+          "quantity": 8.0,
+          "unit_price": 18.52,
+          "vat_rate": 0.0,
+          "net_amount": 148.16
+        },
+        {
+          "description": "Customs clearance fee",
+          "quantity": 1.0,
+          "unit_price": 109.83,
+          "vat_rate": 0.0,
+          "net_amount": 109.83
+        }
+      ],
+      "subtotal": 257.99,
+      "vat_amount": 0.0,
+      "total": 257.99,
+      "iban": "NL57ABNA4460967357"
+    },
+    "expected_issues": [],
+    "supplier_key": "vandijk"
+  },
+  "011_athpaper_20260312.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Α-155",
+      "issue_date": "2026-03-12",
+      "due_date": "2026-04-11",
+      "currency": "EUR",
+      "supplier": {
+        "name": "ΑΘΗΝΑΪΚΗ ΧΑΡΤΟΠΟΙΪΑ Α.Ε.",
+        "vat_id": "EL958224126",
+        "country": "GR",
+        "address": "Πειραιώς 210, 177 78 Ταύρος, Αθήνα"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Ντοσιέ αρχειοθέτησης",
+          "quantity": 12.0,
+          "unit_price": 4.46,
+          "vat_rate": 24.0,
+          "net_amount": 53.52
+        },
+        {
+          "description": "Μελάνι εκτυπωτή μαύρο",
+          "quantity": 2.0,
+          "unit_price": 72.8,
+          "vat_rate": 24.0,
+          "net_amount": 145.6
+        }
+      ],
+      "subtotal": 199.12,
+      "vat_amount": 47.79,
+      "total": 256.91,
+      "iban": "GR55013025353095622856943755"
+    },
+    "expected_issues": [
+      "MATH_TOTAL"
+    ],
+    "supplier_key": "athpaper"
+  },
+  "012_cloudnest_20260330.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "CN0000759",
+      "issue_date": "2026-03-30",
+      "due_date": "2026-05-14",
+      "currency": "USD",
+      "supplier": {
+        "name": "CloudNest Hosting Inc.",
+        "vat_id": "79-2458591",
+        "country": "US",
+        "address": "500 Howard St, San Francisco, CA 94105, USA"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Object storage (TB-month)",
+          "quantity": 5.0,
+          "unit_price": 23.93,
+          "vat_rate": 0.0,
+          "net_amount": 119.65
+        }
+      ],
+      "subtotal": 119.65,
+      "vat_amount": 0.0,
+      "total": 119.65,
+      "iban": null
+    },
+    "expected_issues": [],
+    "supplier_key": "cloudnest"
+  },
+  "013_vandijk_20260330.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "VDL202600505",
+      "issue_date": "2026-03-08",
+      "due_date": "2026-04-07",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Van Dijk Logistics B.V.",
+        "vat_id": "NL339670711B01",
+        "country": "NL",
+        "address": "Waalhaven Zuidzijde 21, 3089 JH Rotterdam, Netherlands"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Warehouse storage (pallet/month)",
+          "quantity": 8.0,
+          "unit_price": 18.52,
+          "vat_rate": 0.0,
+          "net_amount": 148.16
+        },
+        {
+          "description": "Customs clearance fee",
+          "quantity": 1.0,
+          "unit_price": 109.83,
+          "vat_rate": 0.0,
+          "net_amount": 109.83
+        }
+      ],
+      "subtotal": 257.99,
+      "vat_amount": 0.0,
+      "total": 257.99,
+      "iban": "NL57ABNA4460967357"
+    },
+    "expected_issues": [
+      "DUPLICATE"
+    ],
+    "supplier_key": "vandijk"
+  },
+  "014_northwind_20260404.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "NW-000679",
+      "issue_date": "2026-04-04",
+      "due_date": "2026-05-04",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind Office Supplies Ltd",
+        "vat_id": "IE2719583W",
+        "country": "IE",
+        "address": "Unit 4, Park West Business Park, Dublin 12, Ireland"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Ergonomic office chair",
+          "quantity": 7.0,
+          "unit_price": 319.2,
+          "vat_rate": 0.0,
+          "net_amount": 2234.4
+        },
+        {
+          "description": "Height-adjustable desk",
+          "quantity": 11.0,
+          "unit_price": 508.1,
+          "vat_rate": 0.0,
+          "net_amount": 5589.1
+        },
+        {
+          "description": "Whiteboard markers (pack of 12)",
+          "quantity": 8.0,
+          "unit_price": 9.5,
+          "vat_rate": 0.0,
+          "net_amount": 76.0
+        },
+        {
+          "description": "LED desk lamp",
+          "quantity": 8.0,
+          "unit_price": 56.54,
+          "vat_rate": 0.0,
+          "net_amount": 452.32
+        }
+      ],
+      "subtotal": 8351.82,
+      "vat_amount": 0.0,
+      "total": 8351.82,
+      "iban": "IE06AIBK31879756854153"
+    },
+    "expected_issues": [],
+    "supplier_key": "northwind"
+  },
+  "015_cloudnest_20260408.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "CN0000772",
+      "issue_date": "2026-04-08",
+      "due_date": "2026-05-08",
+      "currency": "USD",
+      "supplier": {
+        "name": "CloudNest Hosting Inc.",
+        "vat_id": "79-2458591",
+        "country": "US",
+        "address": "500 Howard St, San Francisco, CA 94105, USA"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Object storage (TB-month)",
+          "quantity": 6.0,
+          "unit_price": 24.4,
+          "vat_rate": 0.0,
+          "net_amount": 146.4
+        },
+        {
+          "description": "Data egress (TB)",
+          "quantity": 12.0,
+          "unit_price": 88.34,
+          "vat_rate": 0.0,
+          "net_amount": 1060.08
+        }
+      ],
+      "subtotal": 1206.48,
+      "vat_amount": 0.0,
+      "total": 1206.48,
+      "iban": null
+    },
+    "expected_issues": [],
+    "supplier_key": "cloudnest"
+  },
+  "016_delta_20260414.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ 667",
+      "issue_date": "2026-04-14",
+      "due_date": "2026-04-29",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Δέλτα Λογιστική Ι.Κ.Ε.",
+        "vat_id": "EL469138108",
+        "country": "GR",
+        "address": "Αγίου Κωνσταντίνου 8, 151 24 Μαρούσι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Σύνταξη μισθοδοσίας",
+          "quantity": 1.0,
+          "unit_price": 80.44,
+          "vat_rate": 24.0,
+          "net_amount": 80.44
+        },
+        {
+          "description": "Λογιστική υποστήριξη μηνός",
+          "quantity": 1.0,
+          "unit_price": 477.54,
+          "vat_rate": 24.0,
+          "net_amount": 477.54
+        },
+        {
+          "description": "Υποβολή περιοδικής δήλωσης ΦΠΑ",
+          "quantity": 1.0,
+          "unit_price": 117.48,
+          "vat_rate": 24.0,
+          "net_amount": 117.48
+        }
+      ],
+      "subtotal": 675.46,
+      "vat_amount": 162.11,
+      "total": 837.57,
+      "iban": "GR24067055578829960785319307"
+    },
+    "expected_issues": [],
+    "supplier_key": "delta"
+  },
+  "017_aegean_20260422.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0588",
+      "issue_date": "2026-04-22",
+      "due_date": "2026-05-07",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568861",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Espresso coffee beans 1kg",
+          "quantity": 8.0,
+          "unit_price": 27.96,
+          "vat_rate": 24.0,
+          "net_amount": 223.68
+        },
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 1.0,
+          "unit_price": 6.09,
+          "vat_rate": 13.0,
+          "net_amount": 6.09
+        }
+      ],
+      "subtotal": 229.77,
+      "vat_amount": 54.47,
+      "total": 284.24,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [
+      "VAT_ID_INVALID"
+    ],
+    "supplier_key": "aegean"
+  },
+  "018_delta_20260427.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ 652",
+      "issue_date": "2026-04-27",
+      "due_date": "2026-05-27",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Δέλτα Λογιστική Ι.Κ.Ε.",
+        "vat_id": "EL469138108",
+        "country": "GR",
+        "address": "Αγίου Κωνσταντίνου 8, 151 24 Μαρούσι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Λογιστική υποστήριξη μηνός",
+          "quantity": 1.0,
+          "unit_price": 397.99,
+          "vat_rate": 24.0,
+          "net_amount": 397.99
+        },
+        {
+          "description": "Υποβολή περιοδικής δήλωσης ΦΠΑ",
+          "quantity": 1.0,
+          "unit_price": 95.78,
+          "vat_rate": 24.0,
+          "net_amount": 95.78
+        },
+        {
+          "description": "Σύνταξη μισθοδοσίας",
+          "quantity": 1.0,
+          "unit_price": 127.67,
+          "vat_rate": 24.0,
+          "net_amount": 127.67
+        }
+      ],
+      "subtotal": 621.44,
+      "vat_amount": 149.15,
+      "total": 770.59,
+      "iban": "GR24067055578829960785319307"
+    },
+    "expected_issues": [],
+    "supplier_key": "delta"
+  },
+  "019_brightline_20260501.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "BL-20260404",
+      "issue_date": "2026-05-01",
+      "due_date": "2026-05-31",
+      "currency": "GBP",
+      "supplier": {
+        "name": "Brightline Software Ltd",
+        "vat_id": "GB826600539",
+        "country": "GB",
+        "address": "1 Canada Square, London E14 5AB, United Kingdom"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Onboarding and training",
+          "quantity": 1.0,
+          "unit_price": 564.13,
+          "vat_rate": 0.0,
+          "net_amount": 564.13
+        }
+      ],
+      "subtotal": 564.13,
+      "vat_amount": 0.0,
+      "total": 564.13,
+      "iban": "GB76BARC57372473489902"
+    },
+    "expected_issues": [],
+    "supplier_key": "brightline"
+  },
+  "020_northwind_20260509.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "NW-000690",
+      "issue_date": "2026-05-09",
+      "due_date": "2026-05-24",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind Office Supplies Ltd",
+        "vat_id": "IE2719583W",
+        "country": "IE",
+        "address": "Unit 4, Park West Business Park, Dublin 12, Ireland"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Ergonomic office chair",
+          "quantity": 6.0,
+          "unit_price": 282.81,
+          "vat_rate": 0.0,
+          "net_amount": 1696.86
+        },
+        {
+          "description": "Whiteboard markers (pack of 12)",
+          "quantity": 6.0,
+          "unit_price": 11.54,
+          "vat_rate": 0.0,
+          "net_amount": 69.24
+        },
+        {
+          "description": "LED desk lamp",
+          "quantity": 6.0,
+          "unit_price": 54.74,
+          "vat_rate": 0.0,
+          "net_amount": 328.44
+        }
+      ],
+      "subtotal": 2094.54,
+      "vat_amount": 0.0,
+      "total": 2094.54,
+      "iban": "IE06AIBK31879756854153"
+    },
+    "expected_issues": [],
+    "supplier_key": "northwind"
+  },
+  "021_delta_20260511.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ 654",
+      "issue_date": "2026-05-11",
+      "due_date": "2026-06-10",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Δέλτα Λογιστική Ι.Κ.Ε.",
+        "vat_id": "EL469138108",
+        "country": "GR",
+        "address": "Αγίου Κωνσταντίνου 8, 151 24 Μαρούσι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Σύνταξη μισθοδοσίας",
+          "quantity": 1.0,
+          "unit_price": 125.22,
+          "vat_rate": 24.0,
+          "net_amount": 125.22
+        }
+      ],
+      "subtotal": 125.22,
+      "vat_amount": 30.05,
+      "total": 155.27,
+      "iban": "GR50027021437959639207355993"
+    },
+    "expected_issues": [
+      "IBAN_CHANGED"
+    ],
+    "supplier_key": "delta"
+  },
+  "022_brightline_20260511.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "BL-20260416",
+      "issue_date": "2026-05-11",
+      "due_date": "2026-06-25",
+      "currency": "GBP",
+      "supplier": {
+        "name": "Brightline Software Ltd",
+        "vat_id": "GB826600539",
+        "country": "GB",
+        "address": "1 Canada Square, London E14 5AB, United Kingdom"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Onboarding and training",
+          "quantity": 1.0,
+          "unit_price": 463.11,
+          "vat_rate": 0.0,
+          "net_amount": 463.11
+        }
+      ],
+      "subtotal": 463.11,
+      "vat_amount": 0.0,
+      "total": 463.11,
+      "iban": "GB76BARC57372473489902"
+    },
+    "expected_issues": [],
+    "supplier_key": "brightline"
+  },
+  "023_cloudnest_20260517.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "CN0000772",
+      "issue_date": "2026-04-08",
+      "due_date": "2026-05-08",
+      "currency": "USD",
+      "supplier": {
+        "name": "CloudNest Hosting Inc.",
+        "vat_id": "79-2458591",
+        "country": "US",
+        "address": "500 Howard St, San Francisco, CA 94105, USA"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Object storage (TB-month)",
+          "quantity": 6.0,
+          "unit_price": 24.4,
+          "vat_rate": 0.0,
+          "net_amount": 146.4
+        },
+        {
+          "description": "Data egress (TB)",
+          "quantity": 12.0,
+          "unit_price": 88.34,
+          "vat_rate": 0.0,
+          "net_amount": 1060.08
+        }
+      ],
+      "subtotal": 1206.48,
+      "vat_amount": 0.0,
+      "total": 1206.48,
+      "iban": null
+    },
+    "expected_issues": [
+      "DUPLICATE"
+    ],
+    "supplier_key": "cloudnest"
+  },
+  "024_aegean_20260521.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0572",
+      "issue_date": "2026-05-21",
+      "due_date": "2026-06-05",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Extra virgin olive oil 5L",
+          "quantity": 8.0,
+          "unit_price": 36.32,
+          "vat_rate": 13.0,
+          "net_amount": 290.56
+        },
+        {
+          "description": "Seasonal fruit (crate)",
+          "quantity": 11.0,
+          "unit_price": 20.68,
+          "vat_rate": 13.0,
+          "net_amount": 227.48
+        }
+      ],
+      "subtotal": 518.04,
+      "vat_amount": 67.35,
+      "total": 585.39,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [],
+    "supplier_key": "aegean"
+  },
+  "025_bergmann_20260522.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "RE-2026-00236",
+      "issue_date": "2026-05-22",
+      "due_date": "2026-06-21",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Bergmann Industrietechnik GmbH",
+        "vat_id": "DE362950628",
+        "country": "DE",
+        "address": "Industriestraße 14, 70565 Stuttgart, Germany"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Hydraulic pump service",
+          "quantity": 1.0,
+          "unit_price": 750.29,
+          "vat_rate": 0.0,
+          "net_amount": 750.29
+        },
+        {
+          "description": "Stainless steel fittings set",
+          "quantity": 10.0,
+          "unit_price": 93.46,
+          "vat_rate": 0.0,
+          "net_amount": 934.6
+        }
+      ],
+      "subtotal": 1684.89,
+      "vat_amount": 0.0,
+      "total": 1684.89,
+      "iban": "DE25974845324523988767"
+    },
+    "expected_issues": [],
+    "supplier_key": "bergmann"
+  },
+  "026_brightline_20260525.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "BL-20260404",
+      "issue_date": "2026-05-01",
+      "due_date": "2026-05-31",
+      "currency": "GBP",
+      "supplier": {
+        "name": "Brightline Software Ltd",
+        "vat_id": "GB826600539",
+        "country": "GB",
+        "address": "1 Canada Square, London E14 5AB, United Kingdom"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Onboarding and training",
+          "quantity": 1.0,
+          "unit_price": 564.13,
+          "vat_rate": 0.0,
+          "net_amount": 564.13
+        }
+      ],
+      "subtotal": 564.13,
+      "vat_amount": 0.0,
+      "total": 564.13,
+      "iban": "GB76BARC57372473489902"
+    },
+    "expected_issues": [
+      "DUPLICATE"
+    ],
+    "supplier_key": "brightline"
+  },
+  "027_northwind_20260530.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "NW-000688",
+      "issue_date": "2026-05-30",
+      "due_date": null,
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind Office Supplies Ltd",
+        "vat_id": "IE2719583W",
+        "country": "IE",
+        "address": "Unit 4, Park West Business Park, Dublin 12, Ireland"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Ergonomic office chair",
+          "quantity": 4.0,
+          "unit_price": 227.79,
+          "vat_rate": 0.0,
+          "net_amount": 911.16
+        },
+        {
+          "description": "LED desk lamp",
+          "quantity": 1.0,
+          "unit_price": 33.57,
+          "vat_rate": 0.0,
+          "net_amount": 33.57
+        },
+        {
+          "description": "Height-adjustable desk",
+          "quantity": 8.0,
+          "unit_price": 638.91,
+          "vat_rate": 0.0,
+          "net_amount": 5111.28
+        }
+      ],
+      "subtotal": 6056.01,
+      "vat_amount": 0.0,
+      "total": 6056.01,
+      "iban": "IE06AIBK31879756854153"
+    },
+    "expected_issues": [],
+    "supplier_key": "northwind"
+  },
+  "028_cloudnest_20260606.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "CN0000752",
+      "issue_date": "2026-06-06",
+      "due_date": "2026-06-21",
+      "currency": "USD",
+      "supplier": {
+        "name": "CloudNest Hosting Inc.",
+        "vat_id": "79-2458591",
+        "country": "US",
+        "address": "500 Howard St, San Francisco, CA 94105, USA"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Cloud compute instances",
+          "quantity": 1.0,
+          "unit_price": 1158.15,
+          "vat_rate": 0.0,
+          "net_amount": 1158.15
+        },
+        {
+          "description": "Object storage (TB-month)",
+          "quantity": 9.0,
+          "unit_price": 22.99,
+          "vat_rate": 0.0,
+          "net_amount": 206.91
+        }
+      ],
+      "subtotal": 1365.06,
+      "vat_amount": 0.0,
+      "total": 1365.06,
+      "iban": null
+    },
+    "expected_issues": [],
+    "supplier_key": "cloudnest"
+  },
+  "029_marconi_20260611.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "737/2026",
+      "issue_date": "2026-06-11",
+      "due_date": "2026-06-26",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Studio Marconi S.r.l.",
+        "vat_id": "IT68370720873",
+        "country": "IT",
+        "address": "Via Tortona 31, 20144 Milano, Italy"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Brand identity design",
+          "quantity": 1.0,
+          "unit_price": 1671.31,
+          "vat_rate": 0.0,
+          "net_amount": 1671.31
+        }
+      ],
+      "subtotal": 1671.31,
+      "vat_amount": 0.0,
+      "total": 1671.31,
+      "iban": "IT64X4580379209157623575533"
+    },
+    "expected_issues": [],
+    "supplier_key": "marconi"
+  },
+  "030_northwind_20260613.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "NW-000699",
+      "issue_date": "2026-06-13",
+      "due_date": "2026-07-13",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind Office Supplies Ltd",
+        "vat_id": "IE2719583W",
+        "country": "IE",
+        "address": "Unit 4, Park West Business Park, Dublin 12, Ireland"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "LED desk lamp",
+          "quantity": 2.0,
+          "unit_price": 59.73,
+          "vat_rate": 0.0,
+          "net_amount": 119.46
+        }
+      ],
+      "subtotal": 119.46,
+      "vat_amount": 0.0,
+      "total": 119.46,
+      "iban": "IE06AIBK31879756854153"
+    },
+    "expected_issues": [],
+    "supplier_key": "northwind"
+  },
+  "031_konst_20260614.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Β-859",
+      "issue_date": "2026-06-14",
+      "due_date": "2026-07-14",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Κωνσταντίνου Τεχνική Ο.Ε.",
+        "vat_id": "EL249426030",
+        "country": "GR",
+        "address": "Λ. Μεσογείων 355, 152 31 Χαλάνδρι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Εργασία ηλεκτρολόγου (ώρες)",
+          "quantity": 4.0,
+          "unit_price": 39.15,
+          "vat_rate": 24.0,
+          "net_amount": 156.6
+        },
+        {
+          "description": "Συντήρηση κλιματιστικών μονάδων",
+          "quantity": 2.0,
+          "unit_price": 96.66,
+          "vat_rate": 24.0,
+          "net_amount": 193.32
+        },
+        {
+          "description": "Ανταλλακτικά ηλεκτρολογικού υλικού",
+          "quantity": 10.0,
+          "unit_price": 30.02,
+          "vat_rate": 24.0,
+          "net_amount": 300.2
+        }
+      ],
+      "subtotal": 650.12,
+      "vat_amount": 156.03,
+      "total": 806.15,
+      "iban": "GR65074014342790969413222822"
+    },
+    "expected_issues": [],
+    "supplier_key": "konst"
+  },
+  "032_konst_20260702.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Β-861",
+      "issue_date": "2026-07-02",
+      "due_date": "2026-08-16",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Κωνσταντίνου Τεχνική Ο.Ε.",
+        "vat_id": "EL249426030",
+        "country": "GR",
+        "address": "Λ. Μεσογείων 355, 152 31 Χαλάνδρι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Εργασία ηλεκτρολόγου (ώρες)",
+          "quantity": 6.0,
+          "unit_price": 38.0,
+          "vat_rate": 24.0,
+          "net_amount": 228.0
+        },
+        {
+          "description": "Ανταλλακτικά ηλεκτρολογικού υλικού",
+          "quantity": 12.0,
+          "unit_price": 140.39,
+          "vat_rate": 24.0,
+          "net_amount": 1684.68
+        }
+      ],
+      "subtotal": 1912.68,
+      "vat_amount": 459.04,
+      "total": 2371.72,
+      "iban": "GR65074014342790969413222822"
+    },
+    "expected_issues": [
+      "SCANNED"
+    ],
+    "supplier_key": "konst"
+  },
+  "033_delta_20260709.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ 675",
+      "issue_date": "2026-07-09",
+      "due_date": "2026-08-08",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Δέλτα Λογιστική Ι.Κ.Ε.",
+        "vat_id": "EL469138108",
+        "country": "GR",
+        "address": "Αγίου Κωνσταντίνου 8, 151 24 Μαρούσι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Σύνταξη μισθοδοσίας",
+          "quantity": 1.0,
+          "unit_price": 157.24,
+          "vat_rate": 24.0,
+          "net_amount": 157.24
+        },
+        {
+          "description": "Λογιστική υποστήριξη μηνός",
+          "quantity": 1.0,
+          "unit_price": 592.46,
+          "vat_rate": 24.0,
+          "net_amount": 592.46
+        }
+      ],
+      "subtotal": 749.7,
+      "vat_amount": 179.93,
+      "total": 929.63,
+      "iban": "GR24067055578829960785319307"
+    },
+    "expected_issues": [],
+    "supplier_key": "delta"
+  },
+  "034_aegean_20260712.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0617",
+      "issue_date": "2026-07-12",
+      "due_date": "2026-08-11",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 6.0,
+          "unit_price": 5.63,
+          "vat_rate": 13.0,
+          "net_amount": 33.78
+        },
+        {
+          "description": "Espresso coffee beans 1kg",
+          "quantity": 5.0,
+          "unit_price": 20.54,
+          "vat_rate": 24.0,
+          "net_amount": 102.7
+        },
+        {
+          "description": "Extra virgin olive oil 5L",
+          "quantity": 12.0,
+          "unit_price": 37.05,
+          "vat_rate": 13.0,
+          "net_amount": 444.6
+        }
+      ],
+      "subtotal": 581.08,
+      "vat_amount": 86.84,
+      "total": 667.92,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [],
+    "supplier_key": "aegean"
+  },
+  "035_vandijk_20260713.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "VDL202600497",
+      "issue_date": "2026-07-13",
+      "due_date": "2026-07-28",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Van Dijk Logistics B.V.",
+        "vat_id": "NL339670711B01",
+        "country": "NL",
+        "address": "Waalhaven Zuidzijde 21, 3089 JH Rotterdam, Netherlands"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Warehouse storage (pallet/month)",
+          "quantity": 1.0,
+          "unit_price": 14.92,
+          "vat_rate": 0.0,
+          "net_amount": 14.92
+        },
+        {
+          "description": "Pallet transport Rotterdam-Athens",
+          "quantity": 1.0,
+          "unit_price": 1007.56,
+          "vat_rate": 0.0,
+          "net_amount": 1007.56
+        }
+      ],
+      "subtotal": 1022.48,
+      "vat_amount": 0.0,
+      "total": 1022.48,
+      "iban": "NL57ABNA4460967357"
+    },
+    "expected_issues": [],
+    "supplier_key": "vandijk"
+  },
+  "036_konst_20260720.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Β-864",
+      "issue_date": "2026-07-20",
+      "due_date": "2026-09-03",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Κωνσταντίνου Τεχνική Ο.Ε.",
+        "vat_id": "EL249426030",
+        "country": "GR",
+        "address": "Λ. Μεσογείων 355, 152 31 Χαλάνδρι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Συντήρηση κλιματιστικών μονάδων",
+          "quantity": 7.0,
+          "unit_price": 103.41,
+          "vat_rate": 24.0,
+          "net_amount": 723.87
+        },
+        {
+          "description": "Εργασία ηλεκτρολόγου (ώρες)",
+          "quantity": 2.0,
+          "unit_price": 30.48,
+          "vat_rate": 24.0,
+          "net_amount": 60.96
+        }
+      ],
+      "subtotal": 784.83,
+      "vat_amount": 188.36,
+      "total": 973.19,
+      "iban": "GR65074014342790969413222822"
+    },
+    "expected_issues": [],
+    "supplier_key": "konst"
+  },
+  "037_northwind_20260728.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "NW-000671",
+      "issue_date": "2026-07-28",
+      "due_date": null,
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind Office Supplies Ltd",
+        "vat_id": "IE2719583W",
+        "country": "IE",
+        "address": "Unit 4, Park West Business Park, Dublin 12, Ireland"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "LED desk lamp",
+          "quantity": 2.0,
+          "unit_price": 25.74,
+          "vat_rate": 0.0,
+          "net_amount": 51.48
+        },
+        {
+          "description": "Ergonomic office chair",
+          "quantity": 9.0,
+          "unit_price": 321.23,
+          "vat_rate": 0.0,
+          "net_amount": 2891.07
+        },
+        {
+          "description": "Whiteboard markers (pack of 12)",
+          "quantity": 1.0,
+          "unit_price": 12.95,
+          "vat_rate": 0.0,
+          "net_amount": 12.95
+        },
+        {
+          "description": "Height-adjustable desk",
+          "quantity": 1.0,
+          "unit_price": 372.92,
+          "vat_rate": 0.0,
+          "net_amount": 372.92
+        }
+      ],
+      "subtotal": 3328.42,
+      "vat_amount": 0.0,
+      "total": 3328.42,
+      "iban": "IE06AIBK31879756854153"
+    },
+    "expected_issues": [
+      "SCANNED"
+    ],
+    "supplier_key": "northwind"
+  },
+  "038_athpaper_20260801.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Α-163",
+      "issue_date": "2026-08-01",
+      "due_date": "2026-08-31",
+      "currency": "EUR",
+      "supplier": {
+        "name": "ΑΘΗΝΑΪΚΗ ΧΑΡΤΟΠΟΙΪΑ Α.Ε.",
+        "vat_id": "EL958224126",
+        "country": "GR",
+        "address": "Πειραιώς 210, 177 78 Ταύρος, Αθήνα"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Ντοσιέ αρχειοθέτησης",
+          "quantity": 12.0,
+          "unit_price": 4.07,
+          "vat_rate": 24.0,
+          "net_amount": 48.84
+        },
+        {
+          "description": "Μελάνι εκτυπωτή μαύρο",
+          "quantity": 1.0,
+          "unit_price": 46.77,
+          "vat_rate": 24.0,
+          "net_amount": 46.77
+        }
+      ],
+      "subtotal": 95.61,
+      "vat_amount": 22.95,
+      "total": 118.56,
+      "iban": "GR55013025353095622856943755"
+    },
+    "expected_issues": [
+      "SCANNED"
+    ],
+    "supplier_key": "athpaper"
+  },
+  "039_konst_20260802.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Β-882",
+      "issue_date": "2026-08-02",
+      "due_date": "2026-09-01",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Κωνσταντίνου Τεχνική Ο.Ε.",
+        "vat_id": "EL249426030",
+        "country": "GR",
+        "address": "Λ. Μεσογείων 355, 152 31 Χαλάνδρι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Εργασία ηλεκτρολόγου (ώρες)",
+          "quantity": 8.0,
+          "unit_price": 31.39,
+          "vat_rate": 24.0,
+          "net_amount": 251.12
+        },
+        {
+          "description": "Συντήρηση κλιματιστικών μονάδων",
+          "quantity": 8.0,
+          "unit_price": 114.99,
+          "vat_rate": 24.0,
+          "net_amount": 919.92
+        },
+        {
+          "description": "Ανταλλακτικά ηλεκτρολογικού υλικού",
+          "quantity": 5.0,
+          "unit_price": 177.21,
+          "vat_rate": 24.0,
+          "net_amount": 886.05
+        }
+      ],
+      "subtotal": 2057.09,
+      "vat_amount": 493.7,
+      "total": 2550.79,
+      "iban": "GR65074014342790969413222822"
+    },
+    "expected_issues": [],
+    "supplier_key": "konst"
+  },
+  "040_hispania_20260816.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "HP-2026-0495",
+      "issue_date": "2026-08-16",
+      "due_date": "2026-09-15",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Hispania Print S.L.",
+        "vat_id": "ESB14265799",
+        "country": "ES",
+        "address": "Calle de Alcalá 95, 28009 Madrid, Spain"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Business cards (500 units)",
+          "quantity": 6.0,
+          "unit_price": 43.33,
+          "vat_rate": 0.0,
+          "net_amount": 259.98
+        }
+      ],
+      "subtotal": 259.98,
+      "vat_amount": 0.0,
+      "total": 259.98,
+      "iban": "ES4258030267716687199089"
+    },
+    "expected_issues": [],
+    "supplier_key": "hispania"
+  },
+  "041_brightline_20260819.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "BL-20260417",
+      "issue_date": "2026-08-19",
+      "due_date": "2026-09-18",
+      "currency": "GBP",
+      "supplier": {
+        "name": "Brightline Software Ltd",
+        "vat_id": "GB826600539",
+        "country": "GB",
+        "address": "1 Canada Square, London E14 5AB, United Kingdom"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Premium support plan",
+          "quantity": 1.0,
+          "unit_price": 464.25,
+          "vat_rate": 0.0,
+          "net_amount": 464.25
+        },
+        {
+          "description": "Analytics Pro licence (seat/month)",
+          "quantity": 8.0,
+          "unit_price": 26.01,
+          "vat_rate": 0.0,
+          "net_amount": 208.08
+        }
+      ],
+      "subtotal": 672.33,
+      "vat_amount": 0.0,
+      "total": 672.33,
+      "iban": "GB76BARC57372473499902"
+    },
+    "expected_issues": [
+      "IBAN_INVALID"
+    ],
+    "supplier_key": "brightline"
+  },
+  "042_hispania_20260831.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "HP-2026-0487",
+      "issue_date": "2026-08-31",
+      "due_date": "2026-10-15",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Hispania Print S.L.",
+        "vat_id": "ESB14265799",
+        "country": "ES",
+        "address": "Calle de Alcalá 95, 28009 Madrid, Spain"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Brochure printing A5 (1,000 units)",
+          "quantity": 5.0,
+          "unit_price": 365.74,
+          "vat_rate": 0.0,
+          "net_amount": 1828.7
+        },
+        {
+          "description": "Roll-up banner",
+          "quantity": 5.0,
+          "unit_price": 103.87,
+          "vat_rate": 0.0,
+          "net_amount": 519.35
+        },
+        {
+          "description": "Business cards (500 units)",
+          "quantity": 7.0,
+          "unit_price": 58.54,
+          "vat_rate": 0.0,
+          "net_amount": 409.78
+        }
+      ],
+      "subtotal": 2757.83,
+      "vat_amount": 0.0,
+      "total": 2757.83,
+      "iban": "ES4258030267716687199089"
+    },
+    "expected_issues": [],
+    "supplier_key": "hispania"
+  },
+  "043_delta_20260901.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ 653",
+      "issue_date": "2026-09-01",
+      "due_date": "2026-10-01",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Δέλτα Λογιστική Ι.Κ.Ε.",
+        "vat_id": "EL469138108",
+        "country": "GR",
+        "address": "Αγίου Κωνσταντίνου 8, 151 24 Μαρούσι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Λογιστική υποστήριξη μηνός",
+          "quantity": 1.0,
+          "unit_price": 451.79,
+          "vat_rate": 24.0,
+          "net_amount": 451.79
+        }
+      ],
+      "subtotal": 451.79,
+      "vat_amount": 108.43,
+      "total": 560.22,
+      "iban": "GR24067055578829960785319307"
+    },
+    "expected_issues": [],
+    "supplier_key": "delta"
+  },
+  "044_bergmann_20260901.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "RE-2026-00241",
+      "issue_date": "2026-09-01",
+      "due_date": "2026-10-16",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Bergmann Industrietechnik GmbH",
+        "vat_id": "DE362950628",
+        "country": "DE",
+        "address": "Industriestraße 14, 70565 Stuttgart, Germany"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Stainless steel fittings set",
+          "quantity": 2.0,
+          "unit_price": 43.19,
+          "vat_rate": 0.0,
+          "net_amount": 86.38
+        },
+        {
+          "description": "Maintenance labour (hours)",
+          "quantity": 8.0,
+          "unit_price": 64.67,
+          "vat_rate": 0.0,
+          "net_amount": 517.36
+        },
+        {
+          "description": "Hydraulic pump service",
+          "quantity": 1.0,
+          "unit_price": 354.8,
+          "vat_rate": 0.0,
+          "net_amount": 354.8
+        }
+      ],
+      "subtotal": 958.54,
+      "vat_amount": 0.0,
+      "total": 958.54,
+      "iban": "DE25974845324523988767"
+    },
+    "expected_issues": [],
+    "supplier_key": "bergmann"
+  },
+  "045_cloudnest_20260902.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "CN0000764",
+      "issue_date": "2026-09-02",
+      "due_date": "2026-09-17",
+      "currency": "USD",
+      "supplier": {
+        "name": "CloudNest Hosting Inc.",
+        "vat_id": "79-2458591",
+        "country": "US",
+        "address": "500 Howard St, San Francisco, CA 94105, USA"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Object storage (TB-month)",
+          "quantity": 4.0,
+          "unit_price": 20.34,
+          "vat_rate": 0.0,
+          "net_amount": 81.36
+        }
+      ],
+      "subtotal": 81.36,
+      "vat_amount": 0.0,
+      "total": 81.36,
+      "iban": null
+    },
+    "expected_issues": [],
+    "supplier_key": "cloudnest"
+  },
+  "046_hispania_20260903.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "HP-2026-0545",
+      "issue_date": "2026-09-03",
+      "due_date": "2026-10-18",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Hispania Print S.L.",
+        "vat_id": "ESB14265799",
+        "country": "ES",
+        "address": "Calle de Alcalá 95, 28009 Madrid, Spain"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Brochure printing A5 (1,000 units)",
+          "quantity": 5.0,
+          "unit_price": 365.74,
+          "vat_rate": 0.0,
+          "net_amount": 1828.7
+        },
+        {
+          "description": "Roll-up banner",
+          "quantity": 5.0,
+          "unit_price": 103.87,
+          "vat_rate": 0.0,
+          "net_amount": 519.35
+        },
+        {
+          "description": "Business cards (500 units)",
+          "quantity": 7.0,
+          "unit_price": 58.54,
+          "vat_rate": 0.0,
+          "net_amount": 409.78
+        }
+      ],
+      "subtotal": 2757.83,
+      "vat_amount": 0.0,
+      "total": 2757.83,
+      "iban": "ES4258030267716687199089"
+    },
+    "expected_issues": [
+      "POSSIBLE_DUPLICATE"
+    ],
+    "supplier_key": "hispania"
+  },
+  "047_brightline_20260905.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "BL-20260412",
+      "issue_date": "2026-09-05",
+      "due_date": "2026-10-05",
+      "currency": "GBP",
+      "supplier": {
+        "name": "Brightline Software Ltd",
+        "vat_id": "GB826600539",
+        "country": "GB",
+        "address": "1 Canada Square, London E14 5AB, United Kingdom"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Analytics Pro licence (seat/month)",
+          "quantity": 11.0,
+          "unit_price": 34.61,
+          "vat_rate": 0.0,
+          "net_amount": 380.71
+        },
+        {
+          "description": "Premium support plan",
+          "quantity": 1.0,
+          "unit_price": 285.72,
+          "vat_rate": 0.0,
+          "net_amount": 285.72
+        },
+        {
+          "description": "Onboarding and training",
+          "quantity": 1.0,
+          "unit_price": 559.85,
+          "vat_rate": 0.0,
+          "net_amount": 559.85
+        }
+      ],
+      "subtotal": 1226.28,
+      "vat_amount": 0.0,
+      "total": 1226.28,
+      "iban": "GB76BARC57372473489902"
+    },
+    "expected_issues": [],
+    "supplier_key": "brightline"
+  },
+  "048_aegean_20260906.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0619",
+      "issue_date": "2026-09-06",
+      "due_date": "2026-10-06",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568861",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 8.0,
+          "unit_price": 5.94,
+          "vat_rate": 13.0,
+          "net_amount": 47.52
+        }
+      ],
+      "subtotal": 47.52,
+      "vat_amount": 6.18,
+      "total": 53.7,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [
+      "VAT_ID_INVALID"
+    ],
+    "supplier_key": "aegean"
+  },
+  "049_konst_20260909.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Β-869",
+      "issue_date": "2026-09-09",
+      "due_date": "2026-10-09",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Κωνσταντίνου Τεχνική Ο.Ε.",
+        "vat_id": "EL249426030",
+        "country": "GR",
+        "address": "Λ. Μεσογείων 355, 152 31 Χαλάνδρι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Συντήρηση κλιματιστικών μονάδων",
+          "quantity": 4.0,
+          "unit_price": 74.36,
+          "vat_rate": 24.0,
+          "net_amount": 297.44
+        },
+        {
+          "description": "Ανταλλακτικά ηλεκτρολογικού υλικού",
+          "quantity": 1.0,
+          "unit_price": 124.5,
+          "vat_rate": 24.0,
+          "net_amount": 124.5
+        },
+        {
+          "description": "Εργασία ηλεκτρολόγου (ώρες)",
+          "quantity": 2.0,
+          "unit_price": 39.69,
+          "vat_rate": 24.0,
+          "net_amount": 79.38
+        }
+      ],
+      "subtotal": 501.32,
+      "vat_amount": 120.32,
+      "total": 621.64,
+      "iban": "GR65074014342790969413222822"
+    },
+    "expected_issues": [],
+    "supplier_key": "konst"
+  },
+  "050_northwind_20260911.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "NW-000674",
+      "issue_date": "2026-09-11",
+      "due_date": null,
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind Office Supplies Ltd",
+        "vat_id": "IE2719583W",
+        "country": "IE",
+        "address": "Unit 4, Park West Business Park, Dublin 12, Ireland"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Whiteboard markers (pack of 12)",
+          "quantity": 1.0,
+          "unit_price": 13.15,
+          "vat_rate": 0.0,
+          "net_amount": 13.15
+        },
+        {
+          "description": "Ergonomic office chair",
+          "quantity": 1.0,
+          "unit_price": 255.27,
+          "vat_rate": 0.0,
+          "net_amount": 255.27
+        }
+      ],
+      "subtotal": 268.42,
+      "vat_amount": 0.0,
+      "total": 268.42,
+      "iban": "IE06AIBK31879756854153"
+    },
+    "expected_issues": [],
+    "supplier_key": "northwind"
+  },
+  "051_cloudnest_20260911.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "CN0000763",
+      "issue_date": "2026-09-11",
+      "due_date": "2026-10-11",
+      "currency": "USD",
+      "supplier": {
+        "name": "CloudNest Hosting Inc.",
+        "vat_id": "79-2458591",
+        "country": "US",
+        "address": "500 Howard St, San Francisco, CA 94105, USA"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Object storage (TB-month)",
+          "quantity": 7.0,
+          "unit_price": 23.34,
+          "vat_rate": 0.0,
+          "net_amount": 163.38
+        },
+        {
+          "description": "Data egress (TB)",
+          "quantity": 7.0,
+          "unit_price": 82.48,
+          "vat_rate": 0.0,
+          "net_amount": 577.36
+        },
+        {
+          "description": "Cloud compute instances",
+          "quantity": 1.0,
+          "unit_price": 1182.65,
+          "vat_rate": 0.0,
+          "net_amount": 1182.65
+        }
+      ],
+      "subtotal": 1923.39,
+      "vat_amount": 0.0,
+      "total": 1923.39,
+      "iban": null
+    },
+    "expected_issues": [],
+    "supplier_key": "cloudnest"
+  },
+  "052_lumiere_20260913.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "F2026-0182",
+      "issue_date": "2026-09-13",
+      "due_date": "2026-09-28",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Lumière Conseil SAS",
+        "vat_id": "FR27890779946",
+        "country": "FR",
+        "address": "18 rue de la Paix, 75002 Paris, France"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Consulting hours",
+          "quantity": 6.0,
+          "unit_price": 146.43,
+          "vat_rate": 0.0,
+          "net_amount": 878.58
+        }
+      ],
+      "subtotal": 878.58,
+      "vat_amount": 0.0,
+      "total": 878.58,
+      "iban": "FR1961418871593102372062074"
+    },
+    "expected_issues": [],
+    "supplier_key": "lumiere"
+  },
+  "053_aegean_20260915.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0631",
+      "issue_date": "2026-09-15",
+      "due_date": "2026-10-30",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Seasonal fruit (crate)",
+          "quantity": 5.0,
+          "unit_price": 15.39,
+          "vat_rate": 13.0,
+          "net_amount": 76.95
+        },
+        {
+          "description": "Extra virgin olive oil 5L",
+          "quantity": 7.0,
+          "unit_price": 40.23,
+          "vat_rate": 13.0,
+          "net_amount": 281.61
+        },
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 1.0,
+          "unit_price": 6.67,
+          "vat_rate": 13.0,
+          "net_amount": 6.67
+        },
+        {
+          "description": "Espresso coffee beans 1kg",
+          "quantity": 8.0,
+          "unit_price": 18.6,
+          "vat_rate": 24.0,
+          "net_amount": 148.8
+        }
+      ],
+      "subtotal": 514.03,
+      "vat_amount": 83.19,
+      "total": 597.22,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [],
+    "supplier_key": "aegean"
+  },
+  "054_aegean_20260922.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0609",
+      "issue_date": "2026-09-22",
+      "due_date": "2026-11-06",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Seasonal fruit (crate)",
+          "quantity": 3.0,
+          "unit_price": 25.55,
+          "vat_rate": 13.0,
+          "net_amount": 76.65
+        },
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 5.0,
+          "unit_price": 4.77,
+          "vat_rate": 13.0,
+          "net_amount": 23.85
+        },
+        {
+          "description": "Extra virgin olive oil 5L",
+          "quantity": 7.0,
+          "unit_price": 43.66,
+          "vat_rate": 13.0,
+          "net_amount": 305.62
+        }
+      ],
+      "subtotal": 406.12,
+      "vat_amount": 52.8,
+      "total": 458.92,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [],
+    "supplier_key": "aegean"
+  },
+  "055_aegean_20260925.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0582",
+      "issue_date": "2026-09-25",
+      "due_date": "2026-10-25",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 12.0,
+          "unit_price": 5.94,
+          "vat_rate": 13.0,
+          "net_amount": 71.28
+        },
+        {
+          "description": "Seasonal fruit (crate)",
+          "quantity": 4.0,
+          "unit_price": 19.68,
+          "vat_rate": 13.0,
+          "net_amount": 78.72
+        },
+        {
+          "description": "Espresso coffee beans 1kg",
+          "quantity": 7.0,
+          "unit_price": 19.04,
+          "vat_rate": 24.0,
+          "net_amount": 133.28
+        }
+      ],
+      "subtotal": 283.28,
+      "vat_amount": 51.49,
+      "total": 333.77,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [
+      "MATH_TOTAL"
+    ],
+    "supplier_key": "aegean"
+  },
+  "056_aegean_20260929.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0626",
+      "issue_date": "2026-09-29",
+      "due_date": "2026-10-14",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Bottled water (pack of 24)",
+          "quantity": 120.0,
+          "unit_price": 4.65,
+          "vat_rate": 13.0,
+          "net_amount": 558.0
+        },
+        {
+          "description": "Extra virgin olive oil 5L",
+          "quantity": 144.0,
+          "unit_price": 47.16,
+          "vat_rate": 13.0,
+          "net_amount": 6791.04
+        },
+        {
+          "description": "Espresso coffee beans 1kg",
+          "quantity": 48.0,
+          "unit_price": 20.32,
+          "vat_rate": 24.0,
+          "net_amount": 975.36
+        },
+        {
+          "description": "Seasonal fruit (crate)",
+          "quantity": 132.0,
+          "unit_price": 15.88,
+          "vat_rate": 13.0,
+          "net_amount": 2096.16
+        }
+      ],
+      "subtotal": 10420.56,
+      "vat_amount": 1461.96,
+      "total": 11882.52,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [
+      "AMOUNT_OUTLIER"
+    ],
+    "supplier_key": "aegean"
+  },
+  "057_bergmann_20261003.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "RE-2026-00230",
+      "issue_date": "2026-10-03",
+      "due_date": "2026-11-02",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Bergmann Industrietechnik GmbH",
+        "vat_id": "DE362950628",
+        "country": "DE",
+        "address": "Industriestraße 14, 70565 Stuttgart, Germany"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Maintenance labour (hours)",
+          "quantity": 12.0,
+          "unit_price": 60.57,
+          "vat_rate": 0.0,
+          "net_amount": 726.84
+        }
+      ],
+      "subtotal": 726.84,
+      "vat_amount": 0.0,
+      "total": 726.84,
+      "iban": "DE25974845324523988767"
+    },
+    "expected_issues": [],
+    "supplier_key": "bergmann"
+  },
+  "058_hispania_20261004.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "HP-2026-0475",
+      "issue_date": "2026-10-04",
+      "due_date": "2026-11-03",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Hispania Print S.L.",
+        "vat_id": "ESB14265799",
+        "country": "ES",
+        "address": "Calle de Alcalá 95, 28009 Madrid, Spain"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Roll-up banner",
+          "quantity": 9.0,
+          "unit_price": 83.25,
+          "vat_rate": 0.0,
+          "net_amount": 749.25
+        },
+        {
+          "description": "Business cards (500 units)",
+          "quantity": 10.0,
+          "unit_price": 59.11,
+          "vat_rate": 0.0,
+          "net_amount": 591.1
+        }
+      ],
+      "subtotal": 1340.35,
+      "vat_amount": 0.0,
+      "total": 1340.35,
+      "iban": "ES4258030267716687199089"
+    },
+    "expected_issues": [],
+    "supplier_key": "hispania"
+  },
+  "059_konst_20261006.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Β-855",
+      "issue_date": "2026-10-06",
+      "due_date": "2026-10-21",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Κωνσταντίνου Τεχνική Ο.Ε.",
+        "vat_id": "EL249426030",
+        "country": "GR",
+        "address": "Λ. Μεσογείων 355, 152 31 Χαλάνδρι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Εργασία ηλεκτρολόγου (ώρες)",
+          "quantity": 6.0,
+          "unit_price": 31.0,
+          "vat_rate": 24.0,
+          "net_amount": 186.0
+        },
+        {
+          "description": "Συντήρηση κλιματιστικών μονάδων",
+          "quantity": 2.0,
+          "unit_price": 124.64,
+          "vat_rate": 24.0,
+          "net_amount": 249.28
+        }
+      ],
+      "subtotal": 435.28,
+      "vat_amount": 104.47,
+      "total": 539.75,
+      "iban": "GR65074014342791969413222822"
+    },
+    "expected_issues": [
+      "IBAN_INVALID"
+    ],
+    "supplier_key": "konst"
+  },
+  "060_athpaper_20261008.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Α-145",
+      "issue_date": "2026-10-08",
+      "due_date": "2026-11-07",
+      "currency": "EUR",
+      "supplier": {
+        "name": "ΑΘΗΝΑΪΚΗ ΧΑΡΤΟΠΟΙΪΑ Α.Ε.",
+        "vat_id": "EL958224126",
+        "country": "GR",
+        "address": "Πειραιώς 210, 177 78 Ταύρος, Αθήνα"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Φάκελοι αλληλογραφίας Α4 (500 τεμ.)",
+          "quantity": 3.0,
+          "unit_price": 23.83,
+          "vat_rate": 24.0,
+          "net_amount": 71.49
+        }
+      ],
+      "subtotal": 71.49,
+      "vat_amount": 17.16,
+      "total": 88.65,
+      "iban": "GR55013025353095622856943755"
+    },
+    "expected_issues": [],
+    "supplier_key": "athpaper"
+  },
+  "061_delta_20261010.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ 679",
+      "issue_date": "2026-10-10",
+      "due_date": "2026-11-09",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Δέλτα Λογιστική Ι.Κ.Ε.",
+        "vat_id": "EL469138108",
+        "country": "GR",
+        "address": "Αγίου Κωνσταντίνου 8, 151 24 Μαρούσι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Σύνταξη μισθοδοσίας",
+          "quantity": 1.0,
+          "unit_price": 93.27,
+          "vat_rate": 24.0,
+          "net_amount": 93.27
+        },
+        {
+          "description": "Λογιστική υποστήριξη μηνός",
+          "quantity": 1.0,
+          "unit_price": 574.69,
+          "vat_rate": 24.0,
+          "net_amount": 574.69
+        }
+      ],
+      "subtotal": 667.96,
+      "vat_amount": 160.31,
+      "total": 828.27,
+      "iban": "GR24067055578829960785319307"
+    },
+    "expected_issues": [],
+    "supplier_key": "delta"
+  },
+  "062_athpaper_20261015.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Α-150",
+      "issue_date": "2026-10-15",
+      "due_date": "2026-11-14",
+      "currency": "EUR",
+      "supplier": {
+        "name": "ΑΘΗΝΑΪΚΗ ΧΑΡΤΟΠΟΙΪΑ Α.Ε.",
+        "vat_id": "EL958224126",
+        "country": "GR",
+        "address": "Πειραιώς 210, 177 78 Ταύρος, Αθήνα"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Φάκελοι αλληλογραφίας Α4 (500 τεμ.)",
+          "quantity": 5.0,
+          "unit_price": 28.68,
+          "vat_rate": 24.0,
+          "net_amount": 143.4
+        }
+      ],
+      "subtotal": 143.4,
+      "vat_amount": 34.42,
+      "total": 177.82,
+      "iban": "GR55013025353095622856943755"
+    },
+    "expected_issues": [],
+    "supplier_key": "athpaper"
+  },
+  "063_aegean_20261018.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "en",
+      "invoice_number": "AFF-2026-0595",
+      "issue_date": "2026-10-18",
+      "due_date": "2026-11-17",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Aegean Fresh Foods Μ.Ι.Κ.Ε.",
+        "vat_id": "EL133568868",
+        "country": "GR",
+        "address": "Ermou 54, 105 63 Athens, Greece"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Extra virgin olive oil 5L",
+          "quantity": 3.0,
+          "unit_price": 32.4,
+          "vat_rate": 13.0,
+          "net_amount": 97.2
+        },
+        {
+          "description": "Seasonal fruit (crate)",
+          "quantity": 12.0,
+          "unit_price": 23.39,
+          "vat_rate": 13.0,
+          "net_amount": 280.68
+        }
+      ],
+      "subtotal": 377.88,
+      "vat_amount": 49.12,
+      "total": 427.0,
+      "iban": "GR32093099282985552297862820"
+    },
+    "expected_issues": [],
+    "supplier_key": "aegean"
+  },
+  "064_konst_20261020.pdf": {
+    "invoice": {
+      "document_type": "invoice",
+      "language": "el",
+      "invoice_number": "ΤΠΥ Β-874",
+      "issue_date": "2026-10-20",
+      "due_date": "2026-12-04",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Κωνσταντίνου Τεχνική Ο.Ε.",
+        "vat_id": "EL249426030",
+        "country": "GR",
+        "address": "Λ. Μεσογείων 355, 152 31 Χαλάνδρι"
+      },
+      "customer": {
+        "name": "Helios Analytics S.A.",
+        "vat_id": "EL801234560",
+        "country": "GR",
+        "address": "Leof. Kifisias 120, 151 25 Marousi, Athens, Greece"
+      },
+      "line_items": [
+        {
+          "description": "Συντήρηση κλιματιστικών μονάδων",
+          "quantity": 2.0,
+          "unit_price": 121.16,
+          "vat_rate": 24.0,
+          "net_amount": 242.32
+        }
+      ],
+      "subtotal": 242.32,
+      "vat_amount": 58.16,
+      "total": 390.48,
+      "iban": "GR65074014342790969413222822"
+    },
+    "expected_issues": [
+      "MATH_TOTAL"
+    ],
+    "supplier_key": "konst"
+  }
+}

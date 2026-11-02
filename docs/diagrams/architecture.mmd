@@ -1,0 +1,15 @@
+flowchart LR
+    P([PDF invoices]) --> R{Text layer?}
+    R -->|yes| T[Text extraction]
+    R -->|scan| V[Page images]
+    T --> X[LLM extraction<br/>JSON schema + retry]
+    V --> X
+    X --> C1[Business rules<br/>math · VAT/AFM · IBAN · dates]
+    X --> C2[Grounding<br/>every value in source?]
+    X --> C3[History<br/>duplicates · outliers]
+    C1 & C2 & C3 --> D{Decision}
+    D -->|clean + confident| A([Auto-approved])
+    D -->|any doubt| H([Human review queue])
+    D -->|same invoice twice| B([Blocked duplicate])
+    H -->|approve / correct| A
+    A --> E[(SQLite → CSV / Excel / dashboard)]
