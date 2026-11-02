@@ -91,14 +91,44 @@ python scripts/check_openai.py
 python -m streamlit run app.py    # then click "▶ Process 64 sample invoices"
 ```
 
+REST API (for an ERP, an email robot or any other system):
+
+```bash
+uvicorn invoiceai.api:app --reload    # then open http://127.0.0.1:8000/docs
+```
+
 Command line:
 
 ```bash
 python -m invoiceai.pipeline samples/invoices          # process a folder (or a single PDF)
 python -m invoiceai.eval.run_eval                      # full evaluation → eval_results/
 python -m invoiceai.synth.generate --n 100 --seed 7    # regenerate / enlarge the sample set
-python -m pytest -q                                    # 46 offline tests, no API key needed
+python -m pytest -q                                    # 55 offline tests, no API key needed
 ```
+
+## REST API
+
+The same pipeline is available as a **FastAPI** service, so an ERP or an email-ingestion job can send invoices directly, with no one opening the UI. Interactive docs are generated at `/docs`.
+
+| Endpoint | What it does |
+|---|---|
+| `POST /invoices` | Upload a PDF → extracted, validated and decided in one call (`auto_approved` / `needs_review` / `duplicate`), with the issues and per-field confidence |
+| `GET /invoices?status=needs_review` | The review queue (or any other status) |
+| `GET /invoices/{id}` | Full result: invoice data, issues, confidence, model, cost, latency |
+| `POST /invoices/{id}/approve` | Human approval, optionally with corrected data; every changed field is logged |
+| `POST /invoices/{id}/reject` | Human rejection with a note |
+| `GET /suppliers` | Supplier master: volume, amount range, known bank accounts |
+
+```bash
+# with this supplier's earlier invoices already processed:
+curl -F "file=@samples/invoices/021_delta_20260511.pdf" http://127.0.0.1:8000/invoices
+# {"doc_id": 21, "status": "needs_review",
+#  "issues": [{"code": "IBAN_CHANGED", "severity": "error", "field": "iban",
+#              "message": "Bank account ... differs from this supplier's known IBAN (...). Verify by phone before paying ..."}],
+#  "invoice": {...}, "field_confidence": {...}, "cost_usd": ..., ...}
+```
+
+Uploading the same file twice returns the earlier result without a second LLM call. Only PDFs up to 10 MB are accepted. Set `INVOICEAI_API_KEY` in `.env` to require an `X-API-Key` header on every request.
 
 ## Tests
 
@@ -111,6 +141,7 @@ The tests run without an API key, using an "oracle" LLM that returns the ground 
 - schema errors are fed back and fixed, and processing is idempotent
 - reviewer corrections are logged field by field
 - AFM / IBAN / VAT checksums and locale-aware number parsing work as intended
+- the REST API: upload → decision, re-upload is free, review queue, approve with logged correction, reject, non-PDF and unknown ids refused, API key enforced
 
 ## Project structure
 
@@ -125,21 +156,22 @@ The tests run without an API key, using an "oracle" LLM that returns the ground 
 │   ├── normalize.py            # locale-aware number/date formats
 │   ├── store.py                # SQLite, supplier master, duplicates, outliers, IBAN-change checks, review log
 │   ├── pipeline.py             # batch processing (CLI)
+│   ├── api.py                  # FastAPI REST service (upload, review queue, approve/reject, suppliers)
 │   ├── synth/generate.py       # labelled synthetic invoice generator
 │   └── eval/run_eval.py        # field accuracy, issue recall, STP, unsafe approvals, cost
 ├── samples/                    # 64 PDFs + ground truth
-└── tests/                      # 46 offline tests
+└── tests/                      # 55 offline tests
 ```
 
 ## Production notes
 
 - **Data residency**: swap `OpenAIClient` (`invoiceai/llm.py`) for Azure OpenAI in the client's tenant or a self-hosted model. The rest is unchanged.
-- **Scaling**: the pipeline is stateless per document. Run it from a queue (e.g. Azure Functions or Data Factory) and move SQLite to PostgreSQL / SQL Server.
+- **Scaling**: the pipeline is stateless per document. Run it from a queue (e.g. Azure Functions or Data Factory) and move SQLite to PostgreSQL / SQL Server. The REST API is the integration point for an ERP or an email-ingestion job.
 - **Learning loop**: the `corrections` table shows which fields reviewers fix most. Feed those into the prompt as examples, or add a rule.
 
 ## Tech stack
 
-Python · OpenAI API (text + vision) · Pydantic · pypdf · pypdfium2 · SQLite · Streamlit · Plotly · reportlab · pytest
+Python · OpenAI API (text + vision) · Pydantic · FastAPI · pypdf · pypdfium2 · SQLite · Streamlit · Plotly · reportlab · pytest
 
 ---
 

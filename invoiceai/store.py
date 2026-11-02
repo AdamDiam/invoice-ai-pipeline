@@ -81,6 +81,9 @@ class Store:
     def document(self, doc_id: int) -> sqlite3.Row | None:
         return self.con.execute("SELECT * FROM documents WHERE doc_id = ?", (doc_id,)).fetchone()
 
+    def document_by_sha(self, sha256: str) -> sqlite3.Row | None:
+        return self.con.execute("SELECT * FROM documents WHERE sha256 = ?", (sha256,)).fetchone()
+
     def issues(self, doc_id: int) -> list[sqlite3.Row]:
         return self.con.execute("SELECT * FROM issues WHERE doc_id = ? ORDER BY severity, code", (doc_id,)).fetchall()
 
