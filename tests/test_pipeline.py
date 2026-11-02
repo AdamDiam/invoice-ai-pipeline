@@ -123,6 +123,8 @@ def test_changed_bank_account_is_flagged_as_fraud_risk(tmp_path):
     assert "IBAN_CHANGED" in codes
     inv.iban = TRUTH[clean[0]]["invoice"]["iban"]
     assert "IBAN_CHANGED" not in {i.code for i in store.history_issues(inv)}
+    inv.iban = "GB82WEST12345698765433"  # broken checksum: IBAN_INVALID's job, not a fraud alert
+    assert "IBAN_CHANGED" not in {i.code for i in store.history_issues(inv)}
 
 
 def test_supplier_master_view(oracle_eval, tmp_path):

@@ -12,7 +12,22 @@ Most "AI invoice parsers" stop at *the LLM returned some JSON*. In finance that 
 <p align="center"><img src="docs/sample_invoices.png" alt="Four sample invoices: modern EU layout, Greek invoice, US invoice, scanned Greek invoice" width="100%"></p>
 <p align="center"><sub>Part of the labelled sample set: EU reverse-charge invoice · Greek invoice (ΦΠΑ 24%) · US invoice in USD · <b>scanned</b> invoice with no text layer</sub></p>
 
-<!-- Add app screenshots here: docs/screenshot1.png -->
+<p align="center"><img src="docs/screenshot_inbox.png" alt="Invoice AI inbox: KPIs, processing flow and extracted invoices" width="100%"></p>
+<p align="center"><sub>64 invoices processed in one live run: 73% straight-through, 14 sent to review with the reason attached, 3 duplicates blocked, 1 changed bank account flagged as fraud · $0.0025 per invoice</sub></p>
+
+<details>
+<summary><b>More screenshots</b>: review queue, dashboard</summary>
+<br>
+
+**Review queue**: the PDF next to the extracted fields with per-field confidence. Here the supplier's own total is wrong (283.28 + 51.49 ≠ 333.77), so it is held for a human.
+
+<img src="docs/screenshot_review.png" alt="Review queue with a MATH_TOTAL issue" width="100%">
+
+**Dashboard**: spend by supplier and by month, per currency.
+
+<img src="docs/screenshot_dashboard.png" alt="Spend and issue dashboard" width="100%">
+
+</details>
 
 ---
 
@@ -20,19 +35,7 @@ Most "AI invoice parsers" stop at *the LLM returned some JSON*. In finance that 
 
 Evaluated on **64 labelled invoices** (12 suppliers, 9 countries, 4 layouts, English and Greek, 3 scans) with **16 deliberately planted problems**:
 
-| Metric | `gpt-5.4-mini` |
-|---|---|
-| Field accuracy (12 header fields × 64 docs) | **100%** |
-| Line-item F1 | **100%** |
-| Planted problems caught | **16 / 16**: arithmetic 3/3 · invalid VAT/AFM 2/2 · invalid IBAN 2/2 · **changed IBAN (fraud) 1/1** · duplicates 3/3 · near-duplicate 1/1 · outlier 1/1 · scans 3/3 |
-| False alarms on clean invoices | **0 / 48** |
-| Straight-through processing | **75%**: all 48 clean invoices auto-approved; the 16 problem documents went to review or were blocked |
-| **Unsafe approvals** | **0** |
-| Cost / speed | **$0.0025 per invoice** ($0.16 for all 64) · median 2.1 s per document |
-
-The first run reached 67% straight-through. All 5 clean invoices sent to review were US invoices, where the model reported low confidence for an IBAN that simply isn't printed. The fix was a policy change, not a prompt hack: optional fields that are absent no longer count toward document confidence. Present-but-uncertain values still block approval. The per-document report in `eval_results/` lists the low-confidence fields, which is how this was found.
-
-> The sample set is synthetic and was built alongside the system, so these numbers are a strong baseline rather than a guarantee for real-world invoices. Run `python -m invoiceai.synth.generate --seed 7` to get a fresh, unseen set.
+<!-- EVAL_RESULTS -->
 
 The metric that matters most is **unsafe approvals**: documents auto-approved while wrong or problematic. The design goal is zero, so that everything uncertain goes to a human.
 
@@ -73,7 +76,7 @@ pip install -r requirements.txt
 cp .env.example .env              # add your OPENAI_API_KEY
 python scripts/check_openai.py
 
-streamlit run app.py              # then "Process the 64 sample invoices" in the sidebar
+python -m streamlit run app.py    # then click "▶ Process 64 sample invoices"
 ```
 
 Command line:

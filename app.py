@@ -24,7 +24,44 @@ from invoiceai.schema import Invoice  # noqa: E402
 from invoiceai.store import Store  # noqa: E402
 from invoiceai.validate import check_rules  # noqa: E402
 
-st.set_page_config(page_title="Invoice AI: AP Automation", page_icon="🧾", layout="wide")
+st.set_page_config(page_title="Invoice AI", page_icon="🧾", layout="wide", initial_sidebar_state="collapsed")
+
+ACCENT, TEAL, RED, MUTED = "#F5A524", "#2DD4BF", "#F87171", "#94A3B8"
+px.defaults.template = "plotly_dark"
+px.defaults.color_discrete_sequence = [ACCENT, TEAL, "#818CF8", "#F472B6", "#A3E635", "#38BDF8"]
+
+st.markdown(
+    f"""
+<style>
+  [data-testid="stSidebar"], [data-testid="collapsedControl"] {{ display: none; }}
+  header[data-testid="stHeader"] {{ background: transparent; }}
+  .block-container {{ padding-top: 4.2rem; max-width: 1400px; }}
+  .hero {{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 24px; border-radius:14px;
+          margin-bottom:14px;
+          background: linear-gradient(120deg, #111A2E 0%, #1A2440 60%, #2A2213 100%); border:1px solid #243049; }}
+  .brand {{ font-size:1.6rem; font-weight:800; letter-spacing:.06em; color:#F8FAFC; }}
+  .brand span {{ color:{ACCENT}; }}
+  .tagline {{ color:{MUTED}; font-size:.92rem; margin-top:2px; }}
+  .chip {{ font-family: ui-monospace, Menlo, monospace; font-size:.78rem; color:{TEAL}; border:1px solid #1F4D4A;
+          padding:4px 10px; border-radius:999px; background:#0F2A2A; }}
+  .kpis {{ display:grid; grid-template-columns: repeat(6, 1fr); gap:12px; margin:10px 0 8px; }}
+  .kpi {{ background:#111A2E; border:1px solid #243049; border-radius:12px; padding:14px 16px; }}
+  .kpi .label {{ color:{MUTED}; font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; }}
+  .kpi .value {{ color:#F8FAFC; font-size:1.65rem; font-weight:700; font-family: ui-monospace, Menlo, monospace; }}
+  .kpi .sub {{ color:{MUTED}; font-size:.75rem; }}
+  .kpi.good .value {{ color:{TEAL}; }} .kpi.warn .value {{ color:{ACCENT}; }} .kpi.bad .value {{ color:{RED}; }}
+  .flow {{ display:flex; align-items:stretch; gap:8px; margin:6px 0 18px; }}
+  .step {{ flex:1; background:#0E1526; border:1px solid #243049; border-radius:10px; padding:10px 12px; text-align:center; }}
+  .step b {{ display:block; font-size:1.25rem; color:#F8FAFC; font-family: ui-monospace, Menlo, monospace; }}
+  .step small {{ color:{MUTED}; }}
+  .arrow {{ align-self:center; color:#475569; font-size:1.2rem; }}
+  .step.ok {{ border-color:#1F4D4A; }} .step.rev {{ border-color:#5A4316; }} .step.blk {{ border-color:#5B2424; }}
+  .step.ok b {{ color:{TEAL}; }} .step.rev b {{ color:{ACCENT}; }} .step.blk b {{ color:{RED}; }}
+  @media (max-width: 900px) {{ .kpis {{ grid-template-columns: repeat(2, 1fr); }} .flow {{ flex-wrap:wrap; }} }}
+</style>
+""",
+    unsafe_allow_html=True,
+)
 
 STATUS_LABEL = {
     "auto_approved": "✅ Auto-approved",
@@ -69,6 +106,12 @@ def process(paths: list[Path], store: Store, settings: Settings) -> None:
     st.toast("Done: " + ", ".join(f"{v} {k.replace('_', ' ')}" for k, v in done.items()))
 
 
+def style(fig):
+    fig.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", margin=dict(l=10, r=10, t=50, b=10),
+                      font=dict(color="#E2E8F0"), title_font=dict(size=15))
+    return fig
+
+
 def docs_frame(store: Store) -> pd.DataFrame:
     rows = [dict(r) for r in store.documents()]
     if not rows:
@@ -78,22 +121,25 @@ def docs_frame(store: Store) -> pd.DataFrame:
     return df
 
 
-# --------------------------------------------------------------------------- sidebar
+# --------------------------------------------------------------------------- header + controls
 settings = Settings.from_env()
 store = get_store(str(settings.db_path))
+has_key = bool(os.getenv("OPENAI_API_KEY"))
 
-with st.sidebar:
-    st.markdown("## 🧾 Invoice AI")
-    st.caption("Reads supplier invoices (PDF, incl. scans), extracts the data with an LLM, validates it against "
-               "business rules and the source text, and only auto-approves what it can verify.")
-    has_key = bool(os.getenv("OPENAI_API_KEY"))
-    if not has_key:
-        st.warning("Set OPENAI_API_KEY in .env to process documents.")
-    n_samples = len(list(SAMPLES_DIR.glob("*.pdf")))
-    if st.button(f"▶️ Process the {n_samples} sample invoices", disabled=not has_key or n_samples == 0):
-        process(iter_pdfs(SAMPLES_DIR), store, settings)
-    uploads = st.file_uploader("…or upload your own PDFs", type=["pdf"], accept_multiple_files=True)
-    if uploads and st.button("Process uploaded files", disabled=not has_key):
+st.markdown(
+    f"""<div class="hero"><div><div class="brand">INVOICE<span>·</span>AI</div>
+    <div class="tagline">Accounts-payable automation: LLM extraction that is verified before it is trusted</div></div>
+    <div class="chip">{settings.model} · auto-approve ≥ {settings.auto_approve_confidence:.0%}</div></div>""",
+    unsafe_allow_html=True,
+)
+
+n_samples = len(list(SAMPLES_DIR.glob("*.pdf")))
+c1, c2, c3, _ = st.columns([3, 1.6, 1, 7.4], gap="small", vertical_alignment="center")
+if c1.button(f"▶ Process {n_samples} sample invoices", type="primary", disabled=not has_key or n_samples == 0):
+    process(iter_pdfs(SAMPLES_DIR), store, settings)
+with c2.popover("⬆ Upload PDFs", disabled=not has_key):
+    uploads = st.file_uploader("Supplier invoices", type=["pdf"], accept_multiple_files=True)
+    if uploads and st.button("Process uploaded files"):
         INBOX_DIR.mkdir(parents=True, exist_ok=True)
         paths = []
         for u in uploads:
@@ -101,29 +147,52 @@ with st.sidebar:
             p.write_bytes(u.getvalue())
             paths.append(p)
         process(paths, store, settings)
-    st.divider()
-    if st.button("🗑️ Reset database"):
-        store.reset()
-        st.rerun()
-    st.caption(f"Model: `{settings.model}` · auto-approve ≥ {settings.auto_approve_confidence:.0%} confidence")
+if c3.button("Reset"):
+    store.reset()
+    st.rerun()
+if not has_key:
+    st.warning("Set OPENAI_API_KEY in .env to process documents.")
 
-# --------------------------------------------------------------------------- header
-st.title("Invoice AI: accounts-payable automation")
 df = docs_frame(store)
 if df.empty:
-    st.info("No documents yet. Use **Process the sample invoices** in the sidebar (about 1–2 minutes for 64 PDFs) or upload your own.")
+    st.info("The inbox is empty. Click **Process sample invoices** (about 2 minutes for 64 PDFs) or upload your own.")
     st.stop()
 
 n = len(df)
-auto = int((df["status"] == "auto_approved").sum())
-review = int((df["status"] == "needs_review").sum())
+counts = df["status"].value_counts().to_dict()
+auto = counts.get("auto_approved", 0)
+approved = counts.get("approved", 0)
+review = counts.get("needs_review", 0) + counts.get("failed", 0)
+blocked = counts.get("duplicate", 0) + counts.get("rejected", 0)
+fraud = int(df["issue_codes"].fillna("").str.contains("IBAN_CHANGED").sum())
 dups = df[df["status"] == "duplicate"]
-c1, c2, c3, c4, c5 = st.columns(5)
-c1.metric("Documents", f"{n}")
-c2.metric("Straight-through", f"{auto / n:.0%}", help="Auto-approved without a human")
-c3.metric("Waiting for review", f"{review}")
-c4.metric("Duplicates blocked", f"{len(dups)}", help=f"Value: {dups['total'].fillna(0).sum():,.2f}")
-c5.metric("AI cost", f"${df['cost_usd'].fillna(0).sum():.3f}", help=f"${df['cost_usd'].fillna(0).mean():.4f} per document")
+
+
+def kpi(label: str, value: str, sub: str = "", tone: str = "") -> str:
+    return f'<div class="kpi {tone}"><div class="label">{label}</div><div class="value">{value}</div><div class="sub">{sub}</div></div>'
+
+
+st.markdown(
+    '<div class="kpis">'
+    + kpi("Documents", f"{n}", f"{int((df['mode'] == 'vision').sum())} scanned")
+    + kpi("Straight-through", f"{auto / n:.0%}", "no human needed", "good")
+    + kpi("Needs review", f"{review}", "with reasons attached", "warn")
+    + kpi("Duplicates blocked", f"{len(dups)}", f"{dups['total'].fillna(0).sum():,.2f} not paid twice", "bad")
+    + kpi("Fraud alerts", f"{fraud}", "changed bank account", "bad" if fraud else "")
+    + kpi("AI cost", f"${df['cost_usd'].fillna(0).sum():.2f}", f"${df['cost_usd'].fillna(0).mean():.4f} / invoice")
+    + "</div>",
+    unsafe_allow_html=True,
+)
+st.markdown(
+    f"""<div class="flow">
+    <div class="step"><b>{n}</b><small>received</small></div><div class="arrow">→</div>
+    <div class="step"><b>{n - counts.get('failed', 0)}</b><small>extracted</small></div><div class="arrow">→</div>
+    <div class="step"><b>{n - counts.get('failed', 0)}</b><small>rules · grounding · history</small></div><div class="arrow">→</div>
+    <div class="step ok"><b>{auto + approved}</b><small>approved</small></div>
+    <div class="step rev"><b>{review}</b><small>in review</small></div>
+    <div class="step blk"><b>{blocked}</b><small>blocked</small></div></div>""",
+    unsafe_allow_html=True,
+)
 
 tab_inbox, tab_review, tab_dash, tab_sup, tab_export = st.tabs(
     ["📥 Inbox", "🔍 Review", "📊 Dashboard", "🏢 Suppliers", "⬇️ Export"]
@@ -226,16 +295,17 @@ with tab_dash:
         sub["month"] = sub["issue_date"].str[:7]
         a, b = st.columns(2)
         by_sup = sub.groupby("supplier_name", as_index=False)["total"].sum().sort_values("total", ascending=True)
-        a.plotly_chart(px.bar(by_sup, x="total", y="supplier_name", orientation="h", title=f"Spend by supplier ({cur})",
-                              labels={"total": cur, "supplier_name": ""}))
+        a.plotly_chart(style(px.bar(by_sup, x="total", y="supplier_name", orientation="h", title=f"Spend by supplier ({cur})",
+                              labels={"total": cur, "supplier_name": ""})))
         by_month = sub.groupby("month", as_index=False)["total"].sum()
-        b.plotly_chart(px.bar(by_month, x="month", y="total", title=f"Spend by month ({cur})", labels={"total": cur, "month": ""}))
+        b.plotly_chart(style(px.bar(by_month, x="month", y="total", title=f"Spend by month ({cur})", labels={"total": cur, "month": ""})))
         issues = pd.read_sql("SELECT code, COUNT(*) AS n FROM issues GROUP BY code ORDER BY n DESC", store.con)
         if not issues.empty:
-            a.plotly_chart(px.bar(issues, x="code", y="n", title="Issues caught by type", labels={"n": "documents", "code": ""}))
+            a.plotly_chart(style(px.bar(issues, x="code", y="n", title="Issues caught by type", labels={"n": "documents", "code": ""},
+                                        color_discrete_sequence=[RED])))
         status_counts = df["status_label"].value_counts().reset_index()
         status_counts.columns = ["status", "n"]
-        b.plotly_chart(px.pie(status_counts, names="status", values="n", hole=0.5, title="Processing outcome"))
+        b.plotly_chart(style(px.pie(status_counts, names="status", values="n", hole=0.55, title="Processing outcome")))
         corr = pd.read_sql("SELECT field, COUNT(*) AS n FROM corrections GROUP BY field ORDER BY n DESC", store.con)
         if not corr.empty:
             st.markdown("**Fields corrected by reviewers** (where the AI is weakest)")

@@ -7,6 +7,7 @@ import statistics
 from datetime import date, datetime
 from pathlib import Path
 
+from invoiceai.identifiers import iban_is_valid
 from invoiceai.normalize import norm_id, norm_text
 from invoiceai.schema import Invoice
 from invoiceai.validate import Issue
@@ -116,8 +117,9 @@ class Store:
                 break
         # Bank-account change: the classic invoice-fraud pattern (a valid IBAN that isn't the supplier's).
         # Only trusted history counts, i.e. invoices that were auto-approved or approved by a reviewer.
+        # An IBAN that fails its checksum is already reported as IBAN_INVALID, so it is not double-counted here.
         trusted_ibans = {norm_id(r["iban"]) for r in history if r["iban"] and r["status"] in ("auto_approved", "approved")}
-        if inv.iban and trusted_ibans and norm_id(inv.iban) not in trusted_ibans:
+        if inv.iban and iban_is_valid(inv.iban) and trusted_ibans and norm_id(inv.iban) not in trusted_ibans:
             known = ", ".join(sorted(trusted_ibans))
             issues.append(Issue("IBAN_CHANGED", "error", "iban",
                                 f"Bank account {inv.iban} differs from this supplier's known IBAN ({known}). "
